@@ -1,3 +1,11 @@
-footer._footer {
+#Footer {
 
-}
+	@include background(linear-gradient(top, #852201, #6a1b00));
+	text-align:center;
+	color:#D2B1A8;
+	border-top: 1px solid #5E0C02;
+	padding:10px;
+
+	a { color:#E7E5D3; }
+
+	}//end footer

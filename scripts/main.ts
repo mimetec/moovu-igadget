@@ -8,7 +8,6 @@ match(inferred_content_type()) {
     # simply remove the "UTF-8" argument.  e.g. html(){ ... }
     html("UTF-8") {
       @import device_detection.ts  
-      
       @import html.ts
     }
 

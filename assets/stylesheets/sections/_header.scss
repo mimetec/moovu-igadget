@@ -1,3 +1,56 @@
-header._header {
-  
-}
+#Header {
+  border-top: 1px solid black;
+
+  #Logo {
+    @include background(linear-gradient(#C14102 0, shade(#C14102, 20%) 100%));
+    h1 {
+      margin: 0;
+      padding: 10px 10px 20px 10px;
+      a {
+        font-size: 22px;
+        text-shadow: 0 -1px rgba(0,0,0,0.9);
+        color: white;
+      } //end a
+    }// end h1
+  }// end logo
+
+  .mw_header_bottom {
+  	border-top: 1px solid #5E0C02;
+  	margin-top: -23px;
+  	padding: 10px;
+    display: block;
+    @include background(linear-gradient(top, #852201, #6a1b00));
+    .mw_search {
+      display: inline-block;
+      width: 75%;
+      position: relative;
+      input[type='text']{
+        border: 1px solid black;
+        background-color: #f1f0f0;
+        font-size: 13px;
+        padding: 4px;
+        height: 23px;
+        margin: 0;
+        width: 100%;
+        display: block;
+      } //end mw_search input text
+      .mw_search_btn {
+        height: 33px;
+        position: absolute;
+        top: 0;
+        right: -13px;
+      }// end mw_search_btn
+    }//end mw_search
+    .mw_menu_btn {
+      float: right;
+      display: block;
+      &[data-ur-state="enabled"] span {
+        @extend .sprites-menu-on;
+      }//end data-ur-state
+    }//end mw_menu_btn
+  }//end mw_header_bottom
+
+  #TopMenu { float:right; }
+  li { float:right;margin-right:1em; }
+
+}//end header
