@@ -1,2 +1,77 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
+
+.Content { padding: 7px; }
+
+// //Found on: https://moovwebconfluence.atlassian.net/wiki/pages/viewpage.action?pageId=3768379
+// //Trying to fix Uranium Carousel 3.26.14
+[data-ur-carousel-component="view_container"] {
+  @include hero_load_helper();
+}
+
+/*
+Used for my attempt at recreating the http://uranium.io/interactions/carousel.html
+works now 3.26.14
+div[data-ur-carousel-component="scroll_container"] > * {
+    display: inline-block;
+    float: left;
+  }
+*/
+
+#HomeFeaturedProducts {
+	text-align:center;
+	padding:10px;
+	max-height:320px;
+
+	ul {
+		width: 1100px !important;
+	}
+
+	li {
+		float: left;
+		display: inline;
+		text-align:center; 
+		width: 176px !important;
+		margin: 0px 5px;
+		padding: 10px 5px;
+		background: white;
+
+		.ProductImage { 
+			margin: 0px 10px;
+			width: 165px !important;
+			height:120px;
+			display:block;
+			 }
+
+	} // end li
+
+}//end home featured products
+
+#HomeNewProducts {
+	text-align:center;
+	padding:10px;
+	max-height: 280px;
+
+	ul {
+		width: 2000px !important;
+	}
+
+	li {
+		float: left;
+		display: inline;
+		text-align:center; 
+		width: 176px !important;
+		margin: 0px 5px;
+		padding: 10px 5px;
+		background: white;
+
+		.ProductImage { 
+			margin: 0px 10px;
+			width: 165px !important;
+			height:120px;
+			display:block;
+			 }
+
+	} // end li
+
+}//end home featured products

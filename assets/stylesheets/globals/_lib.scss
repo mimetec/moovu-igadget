@@ -5,3 +5,20 @@
 @mixin btn {
   
 }
+
+//Found on: https://moovwebconfluence.atlassian.net/wiki/pages/viewpage.action?pageId=3768379
+//Trying to fix Uranium Carousel 3.26.14
+@mixin hero_load_helper($items:1) {
+  [data-ur-carousel-component="scroll_container"]:not([style]) {
+    // Make the first item be visible and the rest be invisible
+    // Once Uranium kicks in, this style won't apply because an inline style will get created
+    [data-ur-carousel-component='item'] {
+      visibility: hidden;
+      @for $i from 1 through $items {
+        &:nth-of-type(#{$i}) {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

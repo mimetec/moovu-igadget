@@ -19,13 +19,13 @@ $(".//div[@id='Header']") {
 	  			$(".//li[1]") { 
 	  				add_class("sprites-user")
 	  				#remove anchor text
-	  				$(".//a") { text("") }
+	  				$(".//a") { text(" ") }
 	  			 } #end li for user
 	  			$(".//li[2]") { 
 	  				add_class("sprites-cart")
 	  				move_to("..", "top")
 	  				#remove anchor text
-	  				$(".//a") { text("") }
+	  				$(".//a") { text(" ") }
 	  			 } #end li for cart
 	  		}# end div TopMenu
 
@@ -71,3 +71,8 @@ $("//div[@id='SearchForm']/form//input[@type='image']") {
   wrap("div", class: "mw_search_btn sprites-search")
   attribute("style", "opacity:0;")
 }
+
+  #remove rss ul from menu dd
+  $("//div[@id='Menu']/ul[1]") {
+    remove()
+  } #end
