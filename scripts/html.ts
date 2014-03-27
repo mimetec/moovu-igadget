@@ -26,5 +26,10 @@ $("/html") {
     remove()
   } #end
 
+  #remove Breadcrumb div from each page
+  $("//div[contains(@class,'Breadcrumb')]") {
+    remove()
+  } #end
+
 }
 

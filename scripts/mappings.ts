@@ -26,6 +26,18 @@ match($status) {
         log("--> Importing pages/category.ts in mappings.ts")
         @import pages/category.ts
       }
+      with(/brands/) {
+        log("--> Importing pages/category.ts in mappings.ts")
+        @import pages/category.ts
+      }
+      with(/login/) {
+        log("--> Importing pages/login.ts in mappings.ts")
+        @import pages/login.ts
+      }
+      with(/cart/) {
+        log("--> Importing pages/cart.ts in mappings.ts")
+        @import pages/cart.ts
+      }
       else() {
         $("//div[@id='ProductDetails']/ancestor::html") {
         log("--> Importing product.ts - mapping on content of page rather than match URL")
