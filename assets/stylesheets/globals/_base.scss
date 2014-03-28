@@ -188,3 +188,34 @@ box-shadow:         1px 0px 3px 3px #dbdbdb;
    color:#FFF;
    }
 
+//Style every other ProductList UL that I didn't do custom
+.ProductList {
+
+  ul { width:99% !important;margin: 0 auto; }
+
+  li {
+    width: 98% !important;
+    background: #F1F0F0;
+    border: solid 1px #d6d6d6;
+    padding:1%;
+    margin-bottom:5px;
+
+    .TopSellerNumber { 
+      display:inline-block;
+      font-size:2em;
+      vertical-align: top;
+      background:#7F2500;
+      color:#FFF;
+      padding: 5px; }
+
+    .ProductImage { display:inline-block; }
+
+    .product_info { display:inline-block;width: 16.5em;vertical-align: top; }
+
+    .ProductDetails, .ProductPriceRating, .ProductCompareButton { 
+      text-align:center;
+      margin:5px auto;
+      height: auto !important;
+       }
+  }
+}

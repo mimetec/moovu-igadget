@@ -152,6 +152,8 @@ $(".//div[@id='Wrapper']") {
 
 		} #end SideCategoryNewProducts
 
+		$(".//div[@id='SideBrandTagCloud']") { remove() }
+
 	} # end Right
 
 } # end wrapper

@@ -59,4 +59,31 @@ $(".//div[@id='Wrapper']") {
 	}#end SimilarProductsByCustomerViews
 
 	}#end Content
+
+	$(".//div[contains(@class, 'Right')]") {
+
+			$("//div[@id='SideProductRelated']") { 
+
+			$("./div") { 
+				attribute("data-ur-set", "carousel")
+				attribute("data-ur-carousel-component", "view_container")
+				attribute("data-ur-id", "SideProductRelated")
+				$("./ul") { 
+				attribute("data-ur-carousel-component", "scroll_container")
+					$("./li") { 
+					attribute("data-ur-carousel-component", "item")
+					} # end li
+				} # end ul
+				insert("div",class:"carousel_navigation"){
+					#insert("span",data-ur-carousel-component:"count","-- count --")
+					#insert("div",class:"Previous",data-ur-carousel-component:"button",data-ur-carousel-button-type:"prev","Back")
+					#insert("div",class:"Dots",data-ur-carousel-component:"dots")
+					#insert("div",class:"Next",data-ur-carousel-component:"button",data-ur-carousel-button-type:"next","Forward")
+				}#end div to contain count
+			} # end div child of SideProductRelated
+
+	}#end SideProductRelated
+
+	}#end Right
+
 }#end wrapper

@@ -30,6 +30,10 @@ match($status) {
         log("--> Importing pages/category.ts in mappings.ts")
         @import pages/category.ts
       }
+      with(/search/) {
+        log("--> Importing pages/category.ts in mappings.ts")
+        @import pages/category.ts
+      }
       with(/login/) {
         log("--> Importing pages/login.ts in mappings.ts")
         @import pages/login.ts
