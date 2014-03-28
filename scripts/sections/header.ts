@@ -3,6 +3,7 @@
 #     Move stuff here
 #   }
 # }
+<<<<<<< HEAD
 
 $(".//div[@id='Header']") {
 
@@ -76,3 +77,5 @@ $("//div[@id='SearchForm']/form//input[@type='image']") {
   $("//div[@id='Menu']/ul[1]") {
     remove()
   } #end
+=======
+>>>>>>> 82a800fed607a26981db3c5f30184775fc31fee5
