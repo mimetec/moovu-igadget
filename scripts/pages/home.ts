@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Homepage
 
 $$("body") {
@@ -122,6 +121,4 @@ $(".//div[@id='Wrapper']") {
 	# }#end myfirstcarousel
 
 }# end wrapper
-=======
 # Place holder/example file
->>>>>>> 82a800fed607a26981db3c5f30184775fc31fee5

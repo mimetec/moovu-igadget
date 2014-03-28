@@ -12,7 +12,7 @@ log("--> Running ajax.ts")
 
 # needed for product images
 # replace("%24", "$")
-<<<<<<< HEAD
+
 # replace("&amp;", "&")
 
 
@@ -27,6 +27,5 @@ match($path) {
     log("This Ajax content is unrecognized.")
   }
 }
-=======
+
 # replace("&amp;", "&")
->>>>>>> 82a800fed607a26981db3c5f30184775fc31fee5

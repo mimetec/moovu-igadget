@@ -22,7 +22,6 @@ match($status) {
         log("--> Importing pages/home.ts in mappings.ts")
         @import pages/home.ts
       }
-<<<<<<< HEAD
       with(/shop/) {
         log("--> Importing pages/category.ts in mappings.ts")
         @import pages/category.ts
@@ -48,13 +47,12 @@ match($status) {
         log("--> Importing product.ts - mapping on content of page rather than match URL")
         @import pages/product.ts
   }
-=======
       else() {
         log("--> No page match in mappings.ts")
->>>>>>> 82a800fed607a26981db3c5f30184775fc31fee5
       }
     }
   }
+}
 
   else() {
     # not 200 or 302 response status
